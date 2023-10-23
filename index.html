@@ -56,7 +56,7 @@
                 <li>dragon</li>
             </h1>
         </section>
-<section>
+<section id="place-cn">
     <h1 id="places-title">place i like</h1>
     <li class="important-place">saint martin</li>
     <li class="important-place">bandarban</li>
@@ -75,21 +75,22 @@
 
      </main>
      <script src="js/dom.js"></script>
+     <script src="js/styleinijs.js"></script>
      <script>
-        console.log("js from html");
+       // console.log("js from html");
         
         const places=document.getElementsByClassName('important-place');
         for(const place of places){
-        console.log(place.innerText);
+        //console.log(place.innerText);
     }
      const fruitstitle=document.getElementById('fruits-title');
      fruitstitle.innerText='fruits changed by js';
 
 //query selector
 const someli=document.querySelectorAll('.fruits-container');
-    console.log(someli);
-    for(const li of someli)
-    console.log(li.innerText);
+    //console.log(someli);
+    //for(const li of someli)
+   //console.log(li.innerText);
      </script>
  </body>
 </html>
