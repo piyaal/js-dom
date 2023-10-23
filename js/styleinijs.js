@@ -9,3 +9,5 @@ section.style.backgroundColor='lightgray';
 }
 const container=document.getElementById('place-cn');
 container.style.backgroundColor='blue';
+container.style.textAlign='center';
+container.style.fontSize='30px';
