@@ -1,13 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dom events</title>
+    <title>DOM</title>
+    <link rel="stylesheet" href="style/style.css">
+    <style>
+        li{
+            color: aqua;
+        }
+        #fruits-title{
+            color: chartreuse;
+        }
+         .important-place{
+            color: darksalmon;
+         }
+          .fruits-container li {
+            color: rgba(22, 173, 8, 0.822);
+          }
+    </style>
 </head>
 <body>
-    <h1 onclick="console.log('i clicked!')">dom special events</h1>
-    <button onclick="console.log(7)">clickme</button>
-    <script src="js/events.js"></script>
-</body>
+    <header>welcome to my dom</header>
+     <main id="main-container">
+        <h1>
+            my first dom
+        </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore est placeat nisi similique minus ea, error sequi, itaque quas nemo dignissimos eligendi unde voluptas doloribus obcaecati eius nihil, rerum deleniti et suscipit repudiandae. Perferendis quas non, nam pariatur quam ipsum tempora aliquid, sunt inventore est minima debitis qui, sed atque.</p>
+        <section>
+
+            <ul>
+                <li>hello1</li>
+                <li>hello1</li>
+                <li>hello1</li>
+                <li>hello1</li>
+     
+             </ul>
+        </section>
+
+        <section>
+            <h1 id="fruits-title">
+                fruits i like
+                <li>mango</li>
+                <li>lichu</li>
+                <li>jackfruit</li>
+                <li>dragon</li>
+            </h1>
+        </section>
+        <section class="fruits-container">
+            <h1>
+                fruits i like
+                <li>mango</li>
+                <li>lichu</li>
+                <li>jackfruit</li>
+                <li>dragon</li>
+            </h1>
+        </section>
+<section id="place-cn" class="large-text">
+    <h1 id="places-title">place i like</h1>
+    <ul id="places-list">
+        <li class="important-place">saint martin</li>
+        <li class="important-place">bandarban</li>
+        <li class="important-place" >coxs</li>
+        <li>ramgamati</li>
+    </ul>
+    
+</section>
+     </main>
+     <script src="js/dom.js"></script>
+     <script src="js/styleinijs.js"></script>
+     <script src="js/append.js"></script>
+     <script>
+       // console.log("js from html");
+        
+        const places=document.getElementsByClassName('important-place');
+        for(const place of places){
+        //console.log(place.innerText);
+    }
+     const fruitstitle=document.getElementById('fruits-title');
+     fruitstitle.innerText='fruits changed by js';
+
+//query selector
+const someli=document.querySelectorAll('.fruits-container');
+    //console.log(someli);
+    //for(const li of someli)
+   //console.log(li.innerText);
+     </script>
+ </body>
 </html>
